@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+      PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+<mapper namespace="beansMapper">
+      <!-- <select id="getTestValue" resultType="TestVO" parameterType="TestVO">
+            SELECT * FROM TEST WHERE TESTINPUT = #{testInput}
+      </select> -->
+      
+      
+      <select id="getBeansData" parameterType="String" resultType="map">
+            SELECT bean_id
+                 , bean_name
+                 , bean_type
+                 , bean_img_src
+                 , bean_origin_price
+                 , bean_sale_yn
+                 , bean_discountrate
+                 , bean_sale_price
+              FROM beans_info
+             WHERE bean_type = #{bean_id}
+      </select>
+</mapper>

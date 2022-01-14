@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+	cursor: pointer;
+}
+
+/* main */
+
+.main-content {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    display: flex;
+}
+
+.pay-input {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pay-input-option {
+    width: 600px;
+}
+
+.input-option-title {
+    margin-bottom: 50px;
+}
+
+.input-option-title p {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.pay-input-option ul li h1 {
+    font-size: 3rem;
+    padding: 20px 0;
+}
+
+.pay-input-option select {
+    width: 600px;
+    height: 70px;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.pay-price h1 {
+    padding: 30px 0;
+}
+
+.pay-input-button {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.prev-button {
+    margin-right: 30px;
+}
+
+.prev-button button, .next-button button {
+    width: 200px;
+    height: 60px;
+}
+
+.prev-button button {
+    background-color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.next-button button {
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.pay-img {
+    flex : 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pay-img img {
+    width: 800px;
+}
+
+.main-content2 {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+}
+
+.delivery-guid {
+    width: 900px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    background-color: #F5F5F5;
+    align-items: center;
+    padding: 15px;
+}
+
+.delivery-guid-title {
+    flex: 1;
+}
+
+.delivery-guid-contents {
+    display: none;
+}
+
+.exchange-refund {
+    width: 900px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    background-color: #F5F5F5;
+    align-items: center;
+    padding: 15px;
+}
+
+.exchange-refund-title {
+    flex: 1;
+}
+
+.exchange-refund-contents {
+    display: none;
+}
+
+.notice-board {
+    width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-top: 100px;
+}
+
+.notice-board-content {
+    width: 900px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    border-top: 3px solid black;
+    border-bottom: 1px solid #F5F5F5;
+    background-color: #F5F5F5;
+    align-items: center;
+    padding: 15px;
+}
+
+.notice-board-num {
+    flex: 2.5;
+}
+
+.notice-board-title {
+    flex: 2;
+}
+
+.notice-board-writer {
+    flex: 0.5;
+}
+
+.notice-board-date {
+    flex: 1;
+}
+
+.review {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #F5F5F5;
+}

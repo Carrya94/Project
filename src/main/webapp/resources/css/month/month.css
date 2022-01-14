@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* main */
+.container {
+    background: url("/resources/images/month/month.jpg")no-repeat center/cover;
+}
+
+.main-content {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+}
+
+.main-onemonth {
+    position: absolute;
+    width: 400px;
+    left : 10%;
+    top: 17%;
+}
+
+.month-title {
+    border-bottom: 2px solid #f1f1f1;
+    padding: 20px;
+    padding-left: 0;
+}
+
+.month-title h1 {
+    font-size: 2.5rem;
+    color: #f1f1f1;
+}
+
+.month-text {
+    margin-top: 30px;
+}
+
+.month-text p {
+    font-size: 1.3rem;
+    color: #f1f1f1;
+    line-height: 40px;
+}
+
+.main-button {
+    margin-top: 30px;
+}
+
+.main-button button {
+    width: 200px;
+    height: 70px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #c2c2c2;
+}

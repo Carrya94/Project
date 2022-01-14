@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+	cursor: pointer;
+}
+
+.main-content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 900px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-join {
+    display: flex;
+    flex-direction: row nowrap;
+}
+
+.login {
+	border-right: 5px solid #c1c1c1;
+    padding-right: 20px;
+}
+
+#btn_signup_login {
+	font-size: 2rem;
+    font-weight: bold;
+    border : none;	
+    color: #c1c1c1;
+    background-color : white;
+}
+
+.join {
+    padding-left: 20px;
+}
+
+#btn_signup_signup {
+	font-size: 2rem;
+    font-weight: bold;
+    background-color : white;
+    border : none;
+}
+
+.main-field {
+    margin-top: 40px;
+}
+
+.field-join {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.field-content {
+    margin: 80px 50px 80px 50px;
+}
+
+.site-join {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn_signup_shop {
+	width: 700px;
+    height: 70px;
+    border: 1px solid black;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cacao-join {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#btn_signup_cacao {
+	width: 700px;
+    height: 70px;
+    background-color: #FCE000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1E1E1E;
+    border : none;
+}
+
+
+
+.notice {
+    margin-top: 15px;
+    font-size: 0.875rem;
+}

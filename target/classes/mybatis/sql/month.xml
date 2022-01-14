@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+      PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+   
+<mapper namespace="MonthMapper">
+      <insert id="insertMonthHashMap" parameterType="map">
+      
+            INSERT INTO month_info (
+            	        first_week_bean
+            	      , first_week_grind
+            	      , second_week_bean
+            	      , second_week_grind
+            	      , third_week_bean
+            	      , third_week_grind
+            	      , four_week_bean
+            	      , four_week_grind
+            	      , member_id
+            	      )
+				VALUES(
+					    #{first_week_bean}
+					  , #{first_week_grind}
+					  , #{second_week_bean}
+					  , #{second_week_grind}
+					  , #{third_week_bean}
+					  , #{third_week_grind}
+					  , #{four_week_bean}
+					  , #{four_week_grind}
+					  , #{member_id}
+					  
+				);
+     </insert>
+     <select id="selectMonthHashMap" parameterType="map" resultType="map">
+     			SELECT  first_week_bean
+            	      , first_week_grind
+            	      , second_week_bean
+            	      , second_week_grind
+            	      , third_week_bean
+            	      , third_week_grind
+            	      , four_week_bean
+            	      , four_week_grind
+            	 FROM month_info
+            	 WHERE member_id = #{member_id}
+            	 <!-- WHERE member_id = 'abcd' -->
+            	 <!-- WHERE member_id = #{member_id} -->
+     </select>
+</mapper>

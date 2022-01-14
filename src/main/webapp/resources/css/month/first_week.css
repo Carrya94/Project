@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+	cursor: pointer;
+}
+
+
+/* main */
+.container {
+    background-image: url("/resources/images/1week.jpg");
+    background-position: 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.main-content {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+}
+
+.main-firstweek {
+    position: absolute;
+    width: 600px;
+    left : 10%;
+    top: 15%;
+}
+
+.firstweek-title {
+    text-align: center;
+}
+
+.firstweek-title h1 {
+    font-size: 4rem;
+    color: #F8DBAA;
+}
+
+.firstweek-input {
+    margin-top: 30px;
+}
+
+.main-firstweek ul li:first-child,
+.main-firstweek ul li:nth-child(3) {
+    font-size: 1.5rem;
+    list-style: disc;
+    color: #F8DBAA;
+}
+
+.firstweek-input ul li select {
+    margin: 30px 0;
+    width: 600px;
+    padding: 20px;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0.4;
+}
+
+#btn_first_prev {
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f1f1f1;
+    margin-top: 20px;
+}
+
+#btn_first_next {
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #F8DBAA;
+    margin-top: 20px;
+}
+
+#btn_first_prev:active {
+    background-color: #F8DBAA;
+    color: black;
+}
+
+#btn_first_next:active {
+    background-color: #F8DBAA;
+    color: black;
+}

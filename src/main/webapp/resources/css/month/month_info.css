@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+	cursor: pointer;
+}
+
+/* main */
+
+.main-content {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.month-info {
+    width: 1600px;
+    display: flex;
+    flex-direction: row;
+}
+
+.first-week, .second-week, .third-week, .four-week {
+    width: 400px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.first-week-title, .second-week-title, .third-week-title, .four-week-title {
+    margin-bottom: 50px;
+    font-size: 1.8rem;
+} 
+
+.first-week-bean-title, .second-week-bean-title, .third-week-bean-title, .four-week-bean-title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.first-week-grind-title, .second-week-grind-title, .third-week-grind-title, .four-week-grind-title {
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+.first-week-bean-info, .second-week-bean-info, .third-week-bean-info, .four-week-bean-info
+, .first-week-grind-info, .second-week-grind-info, .third-week-grind-info, .four-week-grind-info {
+    width: 100%;
+    height: 60px;
+    border: 2px solid black;
+    text-align: center;
+    color : #F8DBAA;
+    font-size : 1.25rem;
+    font-weight : bold;
+}
+
+.btn-next-prev {
+    margin: 30px;
+    text-align: center;
+}
+
+#btn_monthinfo_next {
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid #F8DBAA;
+    background-color: black;
+    color: #F8DBAA;
+    margin-left : 10px;
+}
+
+#btn_monthinfo_prev {
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: #F8DBAA;
+    color: black;
+    margin-right : 10px;
+}

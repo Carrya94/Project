@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+	cursor: pointer;
+}
+
+/* main */
+
+.main-content {
+    width: 100%;
+    height: 1800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    width: 80%;
+    display: flex;
+    flex-direction: row nowrap;
+    border-bottom: 2px solid black;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.main-title-text1 {
+    margin-bottom: 10px;
+}
+
+.main-title-text1 p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main-title-text2 {
+    margin-top: 10px;
+}
+
+.main-title-text2 p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-title-span1 {
+    color: #c1c1c1;
+}
+
+
+.main-title-span3 {
+    color: #c1c1c1;
+}
+
+.main-imformation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin: 40px;
+    margin-top: 7%;
+}
+
+.main-imformation-id input {
+    width: 900px;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    border: none;
+    color: #646464;
+}
+
+#btn_idcheck {
+	width: 100px;
+    height: 50px;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-imformation-pw input {
+    width: 900px;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    border: none;
+    color: #646464;
+}
+
+.main-imformation-pwcf input{
+    width: 900px;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    border: none;
+    color: #646464;
+}
+
+.main-imformation-name input{
+    width: 900px;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    border: none;
+    color: #646464;
+}
+
+.main-imformation_addr input{
+    width: 900px;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    border: none;
+    color: #646464;
+}
+
+.main-imformation-email {
+    display: flex;
+    flex-direction: row nowrap;
+}
+
+.main-imformation-email input {
+    width: 900px;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    border: none;
+    color: #646464;
+}
+
+.main-email-choose {
+    padding: 15px 20px;
+}
+
+#email-choose {
+    width: 250px;
+    height: 68px;
+    font-size: 1.25rem;
+    padding: 20px;
+}
+
+.main-imformation-smscheck label {
+    padding-left: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.main-imformation-phone input {
+    width: 900px;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    border: none;
+    color: #646464;
+}
+
+.main-imformation-gender {
+    margin-top: 20px;
+}
+
+.main-gender-title {
+    font-size: 1.5rem;
+}
+
+.main-gender-checkbox {
+    margin-top: 15px;
+}
+
+.main-gender-checkbox label{
+    padding-left: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.main-birth-title {
+    font-size: 1.5rem;
+}
+
+#check-woman {
+    margin-left: 50px;
+}
+
+.main-imformation-birth {
+    margin-top: 30px;
+}
+
+.main-imformation-birth input{
+    width: 900px;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    border: none;
+    color: #646464;
+}
+
+.main-imformation-recommender {
+    margin-top: 20px;
+}
+
+.recommender-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.recommender-input {
+    margin-top: 15px;
+}
+
+.recommender-input input {
+    width: 900px;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    border: none;
+    color: #646464;
+}
+
+.main-button {
+    margin-left: -20px;
+    margin-top: 30px;
+}
+
+.main-button button {
+    width: 900px;
+    height: 68px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-explanation {
+    margin-top: 30px;
+    font-size: 1.25rem;
+}
+
+.id_font, .pw_font, .pwcf_font,
+ .name_font, .addr_font, .email_font,
+  .phone_font, .birth_font {
+	font-size : 1.2rem;
+	font-weight : bold;
+	margin-left : 10px;
+	pading : 5px 0;
+	color : red;
+	width : 400px;
+	height : 30px;
+} 
+

@@ -185,7 +185,7 @@ var bindBeansData = function (i_resultSet) {
     } else {
         ;
         //DATA가 미존재
-        //DATA가 존재하지 않을때는 어떻게할것인가에 대한 고민이 필요..??
+   
     }
 }
 

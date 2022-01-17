@@ -1,7 +1,9 @@
 //Render
 $(document).ready(function() {
 
-    
+    $("btn-buy").on(click, function(){
+        ajaxPageFunction('GET', '/month.do')
+    });
 
     // beans 초기화면
 
@@ -31,7 +33,7 @@ $(document).ready(function() {
                 $('#beans_slider3').css('display','flex');
     
             } else {
-                alert('다음페이지 없다.');
+                ;
             }
         } else {
             ;
@@ -44,73 +46,93 @@ $(document).ready(function() {
         //minus
         iPageNum--;
         
-        if (1 == iPageNum) {
-			//2번페이지
 
-            $('#beans_slider1').css('display','none');
-            $('#beans_slider2').css('display','flex');
-            $('#beans_slider3').css('display','none');
-
-	    } else if (0 == iPageNum) {
-
-            $('#beans_slider1').css('display','flex');
-            $('#beans_slider2').css('display','none');
-            $('#beans_slider3').css('display','none');
+            if (1 == iPageNum) {
+                //2번페이지
+    
+                $('#beans_slider1').css('display','none');
+                $('#beans_slider2').css('display','flex');
+                $('#beans_slider3').css('display','none');
+    
+            } else if (0 == iPageNum) {
+    
+                $('#beans_slider1').css('display','flex');
+                $('#beans_slider2').css('display','none');
+                $('#beans_slider3').css('display','none');
+            
+            } else if (iPageNum < 0) {
+                alert("다음페이지 없습니다");
+                iPageNum = 0;
+            } else {;}
         
-        } else {;}
+        
 	});
 
     //gifticon 초기화면
-
-    /*
+    var jPageNum = 0;
+    
     GetGifticonFunction('PERSONALCAFE');
 
-    $("#beans_prev").on("click", function () {
+    $("#gifticon_next").on("click", function () {
 
-        //plus
-		iPageNum++;
+        
 
-        if (1 == iPageNum) {
-			//2번페이지			
-
-        $('#beans_slider1').css('display','none');
-        $('#beans_slider2').css('display','flex');
-        $('#beans_slider3').css('display','none');
-
-	    } else if (2 == iPageNum) {
-
-        $('#beans_slider1').css('display','none');
-        $('#beans_slider2').css('display','none');
-        $('#beans_slider3').css('display','flex');
-
-        } else if (3== iPageNum){
+        if (jPageNum < 3) {
+            jPageNum++;
+            console.log(jPageNum);
+            //plus
+            if (1 == jPageNum) {
+                //2번페이지			
+    
+                $('#gifticon_slider1').css('display','none');
+                $('#gifticon_slider2').css('display','flex');
+                $('#gifticon_slider3').css('display','none');
+    
+            } else if (2 == jPageNum) {
+    
+                $('#gifticon_slider1').css('display','none');
+                $('#gifticon_slider2').css('display','none');
+                $('#gifticon_slider3').css('display','flex');
+    
+            } else {
+                ;
+            }
+        } else {
             ;
         }
+        
 	});
 
-    $("#beans_next").on("click", function () {
+    $("#gifticon_prev").on("click", function () {
 
         //minus
-        iPageNum--;
         
-        if (0 == iPageNum) {
-			//2번페이지			
-
-        $('#beans_slider1').css('display','flex');
-        $('#beans_slider2').css('display','none');
-        $('#beans_slider3').css('display','none');
-
-	    } else if (1 == iPageNum) {
-
-        $('#beans_slider1').css('display','none');
-        $('#beans_slider2').css('display','flex');
-        $('#beans_slider3').css('display','none');
         
-        } else if (-1 == iPageNum) {
-            ;
-        }
+            jPageNum--;
+
+            if (1 == jPageNum) {
+                //2번페이지
+    
+                $('#gifticon_slider1').css('display','none');
+                $('#gifticon_slider2').css('display','flex');
+                $('#gifticon_slider3').css('display','none');
+    
+            } else if (0 == jPageNum) {
+    
+                $('#gifticon_slider1').css('display','flex');
+                $('#gifticon_slider2').css('display','none');
+                $('#gifticon_slider3').css('display','none');
+            
+            } else if (jPageNum < 0) {
+                alert("다음페이지가 없습니다.");
+                jPageNum = 0;
+            } else {
+                ;
+            }
+
+        
 	});
-    */
+    
 
 });
 
@@ -191,7 +213,7 @@ var bindBeansData = function (i_resultSet) {
     }
 }
 
-//art2-gifticon-img1 slider2
+
 
 var GetGifticonFunction = function (i_key) {
 
